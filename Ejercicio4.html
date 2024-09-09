@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <link href="css/estilos.css" rel="stylesheet"/>
-    <!--Estilo embebido
-        <style>
-        body{
-            background-color: cadetblue!important;
+    <title>Selectores</title>
+    <!-- Tipos de Selectores -->
+
+   <style>
+
+    /*Por elemento*/
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            display: inline-block;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
         }
+
+
+        .rojos{
+            background-color: red;
+        }
+
+        .circulo{
+            border-radius: 50%;
+        }   
+
+        .amarillo{
+            background-color: yellow;
+        }
+
     </style>
-    -->
-    
 </head>
-<!--Estilos en linea
- <body style="background-color: rgba(0, 238, 255, 0.068);">  Este es un estilo en linea 
---> 
 <body>
-    <h1>Ejemplo de Estilos</h1>
-    <p>Este es un texto de ejemplo</p>
-    <img src="imagenes/css.png">
-    <br/>
-    <a href="#">Ir al sitio oficial</a>
     <div>
-        <b> Hola Mundo</b>
+        <div id="div1" class="amarillo"></div>
+        <div id="div2" ></div>
+        <div id="div3" class="circulo amarillo" ></div>
+        <div id="div4" class="circulo"></div>
+        <div id="div5" class="rojos"></div>
+        <div id="div6" class="circulo"></div>
+        <div id="div7" class="amarillo"></div>
     </div>
 </body>
 </html>

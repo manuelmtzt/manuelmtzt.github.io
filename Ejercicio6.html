@@ -6,29 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <style>
-        div{
-            background-color: gray;
-            color: white;
-            width: 200px;
-            height: 200px;
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-            margin: 50px;
-        }
+<style>
 
-        p{
-            margin: 50px;
-            padding: 50px;
-        }
-    </style>
+    #encabezado{
+        width:auto;
+        height: 500px;
+         
+    }
+
+    #imagen, #tituloPelicula{
+        height: 500px;
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    #sinopsis{
+        margin-top: 30px;
+        margin-left: 50px;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .inlineblock{
+        display: inline-block;  
+    }
+    
+    .circulos{
+        width: 200px;
+        height: 200px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 50%; 
+        margin-left: 200px;
+    }
+
+    .rojo{
+        background-color: red;
+    }
+
+    #piePagina{
+        height: 200px;
+        width: auto;
+    }
+
+    #circulo2{
+        background-color: green;
+    }
+    #circulo4{
+        background-color: blue;
+    }
+
+    #hr{
+        margin-top: 20PX;
+        height: 2px;
+        background-color: black;
+        
+    }
+
+    
+
+</style>
 <body>
-    <div>
-        <p>Hola mundo</p>
+    <div id="encabezado">
+        <div id="imagen" class="inlineblock">
+            <img src="imagenes/pelicula.jpg" height="500px" width="400px" >
+        </div>
+        <div id="tituloPelicula" class="inlineblock">
+            <h1>Shutter Island</h1>
+        </div>
     </div>
-    <div>
-        <p>Diseño basado en cajas (BoxModel)</p>
+    <div id="sinopsis">
+        <p>Verano de 1954. Los agentes judiciales Teddy Daniels y Chuck Aule son enviados a una remota isla del puerto de Boston para 
+            investigar la desaparición de una peligrosa asesina recluida en el hospital psiquiátrico Ashecliffe, un centro penitenciario
+            para criminales perturbados dirigido por el siniestro doctor John Cawley. Pronto descubrirán que el centro guarda muchos secretos
+             y que la isla esconde algo más peligroso que los pacientes.</p>
     </div>
+    <div id="piePagina">
+            <div id="circulo1" class="circulos rojo inlineblock"></div>
+            <div id="circulo2" class="circulos inlineblock" ></div>
+            <div id="circulo3" class="circulos rojo inlineblock" ></div>
+            <div id="circulo4" class= "circulos inlineblock"> </div>
+    </div>
+    <hr id="hr"/>
 </body>
 </html>

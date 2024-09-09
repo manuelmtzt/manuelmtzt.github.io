@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+:root{
+    --color-primario:#0000ff;
+}
+
 body{
     width:100vw;
     height: 100vh;
@@ -10,7 +14,7 @@ body{
 }
 
 header{
-    background-color: #00ffff;
+    background-color: var(--color-primario);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -32,3 +36,47 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+
+#superior{
+    background-image: url(../imagenes/uat.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.sobrepuesto{
+    color: white;
+    position: absolute;
+    right: 35%; 
+    top:30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#carreras{
+    width: 100vw;
+    height: 30%;
+}
+
+#LTI, #IT, #LD{
+    display: inline-block;
+    height: 30vh;
+    width: 33vw;
+}
+
+#LTI{
+    background-image: url(../imagenes/LTI.jpg);
+    background-size:cover;
+}
+
+#LD{
+    background-image: url(../imagenes/LD.jpg);
+    background-size:cover;
+}
+
+#IT{
+    background-image: url(../imagenes/IT.jpg);
+    background-size:cover;
+}
+
+
