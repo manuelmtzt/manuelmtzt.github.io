@@ -69,14 +69,72 @@ a{
     background-size:cover;
 }
 
+#tituloLTI{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 8%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+}
+
+#aLTI{
+    margin-top: 150px;
+    margin-left: 270px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
 #LD{
     background-image: url(../imagenes/LD.jpg);
     background-size:cover;
 }
 
+#tituloLD{
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 8%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+}
+
+#aLD{
+    margin-top: 150px;
+    margin-left: 260px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+
 #IT{
     background-image: url(../imagenes/IT.jpg);
     background-size:cover;
 }
+
+#tituloIT{
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 8%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+}
+
+#aIT{
+    margin-top: 150px;
+    margin-left: 270px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+
+
 
 

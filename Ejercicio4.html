@@ -10,11 +10,17 @@
    <style>
 
     /*Por elemento*/
-        div{
+        
+
+        #divmain{
+            width: 100vw;
+            height: 100px;
+        }
+
+        #div1, #div2, #div3, #div4, #div5, #div6, #div7{
             width: 100px;
             height: 100px;
             background-color: aqua;
-            display: inline-block;
             border-width: 5px;
             border-style: solid;
             border-color: black;
@@ -22,7 +28,7 @@
 
 
         .rojos{
-            background-color: red;
+            background-color: red!important;
         }
 
         .circulo{
@@ -30,20 +36,24 @@
         }   
 
         .amarillo{
-            background-color: yellow;
+            background-color: yellow!important;
+        }
+
+        .inlineblock{
+            display: inline-block; 
         }
 
     </style>
 </head>
 <body>
-    <div>
-        <div id="div1" class="amarillo"></div>
-        <div id="div2" ></div>
-        <div id="div3" class="circulo amarillo" ></div>
-        <div id="div4" class="circulo"></div>
-        <div id="div5" class="rojos"></div>
-        <div id="div6" class="circulo"></div>
-        <div id="div7" class="amarillo"></div>
+    <div id="divmain">
+        <div id="div1" class="amarillo inlineblock"></div>
+        <div id="div2" class="inlineblock"></div>
+        <div id="div3" class="circulo amarillo inlineblock" ></div>
+        <div id="div4" class="circulo inlineblock"></div>
+        <div id="div5" class="rojos inlineblock"></div>
+        <div id="div6" class="circulo inlineblock"></div>
+        <div id="div7" class="amarillo inlineblock"></div>
     </div>
 </body>
 </html>
