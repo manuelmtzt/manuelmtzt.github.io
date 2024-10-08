@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-image: url(imagenes/fondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .flexCentrar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputsTamaño{
+            height: 20px;
+            width: 230px;
+        }
+
+        #divUsuario{
+            height: 33%;
+        }
+
+        #divContraseña{
+            height: 20%;
+        }
+
+        #divBoton{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 20%;
+        }
+
+        #adornoLogin{
+            background-image: url(imagenes/barras.jpg);
+            background-size: contain;
+            height: 10%;
+            background-color: white;
+        }
+
+        #principal{
+            width: 30%;
+            height: 40%;
+            background-color: rgb(255, 255, 255, 0.65)
+        }
+
+        #form1{
+            height: 90%;
+        }
+
+
+        #lbl1, #lbl2{
+            margin-left: 15%;
+            font-size: 30px;
+        }
+
+        #in1{
+            margin-left: 39px;
+        }
+
+        #in3{
+            height: 50%;
+            width: 30%;
+            font-size: 20px;
+            
+        }
+
+        #lbl1, #in1{
+            margin-top: 15%;
+        }
+
+       
+
+    </style>
+</head>
+<body class="flexCentrar">
+    <div id="principal">
+        <div id="adornoLogin">
+        </div>
+        <form id="form1">
+            <div id="divUsuario">
+                <label id="lbl1">Usuario:</label>
+                <input id="in1" type="text" class="inputsTamaño">
+            </div>
+            <div id="divContraseña">
+                <label id="lbl2">Contraseña:</label>
+                <input id="in2" type="password" class="inputsTamaño">
+            </div>
+            <div id="divBoton">
+                <input id="in3" type="button" value="Iniciar Sesión">
+            </div>      
+        </form>
+    </div>   
+</body>
+</html>

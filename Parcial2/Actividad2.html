@@ -21,7 +21,7 @@
             
         }
 
-        div{
+        #div1, #div2, #div3, #div4, #div5, #div6{
             display: flex;
             justify-content: space-between;
             padding-bottom: 25px;
@@ -33,14 +33,17 @@
 
         #sEstado{
             width: 20vw;
+            margin-right: 17.3vw;
         }
 
         #sFecha{
             width: 7vw;
+            margin-right: 21vw;
         }
         
         #sSexo{
             width: 9vw;
+            margin-right: 29.5vw;
         }
 
         #btnEnviar{
@@ -48,6 +51,16 @@
             height: 4vh;
             
         }
+
+        #sNombre{
+            margin-right: 6vw;
+        }
+
+        #sPaterno{
+            margin-right: 0.5vw;
+        }
+
+
         
 
     </style>
@@ -56,18 +69,19 @@
         <h1>Consulta tu CURP</h1>
         <form>
             <div>
+            <div id="div1">
                 <label>Nombre:</label>
-                <input type="text" required>
+                <input id="sNombre" type="text" required>
             </div>
-            <div>
+            <div id="div2">
                 <label>Apellido Paterno:</label>
-                <input type="text" required>
+                <input id="sPaterno" type="text" required>
             </div>
-            <div>
+            <div id="div3">
                 <label>Apellido Materno:</label>
                 <input type="text" required>
             </div>
-            <div>
+            <div id="div4">
                 <label>Estado:</label>
                 <select id="sEstado" required>
                     <option value="" disabled="" selected="">Selecciona el estado</option>
@@ -106,11 +120,11 @@
                       <option value="NE">Nacido en el extranjero</option>
                   </select>
             </div>
-            <div>
+            <div id="div5">
                 <label>Fecha de Nacimiento:</label>
                 <input  id="sFecha"type="date" required>
             </div>
-            <div>
+            <div id="div6">
                 <label>Sexo:</label>
                 <select id="sSexo"required>
                     <option value="" disabled="" selected="">Selecciona el sexo</option>
@@ -118,6 +132,7 @@
                     <option>Femenino</option>
                 </select>
             </div>
+        </div>
             
             <input id="btnEnviar" type="submit" value="Consultar">
         </form>
